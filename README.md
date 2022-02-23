@@ -8,4 +8,7 @@ In this project we analyze a global average sea level change data since 1880 and
 
 # Results
 
+## Line prediction
+![alt text](https://github.com/vladi2998/Sea-Level-Predictor/blob/main/sea_level_plot.png)
+
 
