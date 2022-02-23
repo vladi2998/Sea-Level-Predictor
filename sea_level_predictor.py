@@ -22,16 +22,18 @@ def draw_plot():
 
     m, b, r, p, se = linregress(x = df['Year'], y = df['CSIRO Adjusted Sea Level'])
 
-    plt.plot(x['Year'], m*x['Year'] + b)
+    plt.plot(x['Year'], m*x['Year'] + b, 'b')
 
     # Create second line of best fit
     m1, b1, r2, p2, se2 = linregress(x = df['Year'][120:], y = df['CSIRO Adjusted Sea Level'][120:])
 
-    plt.plot(x['Year'][120:], m1*x['Year'][120:] + b1)
+    plt.plot(x['Year'][120:], m1*x['Year'][120:] + b1, 'r')
 
     # Add labels and title
     plt.xlabel('Year')
     plt.ylabel('Sea Level (inches)')
+    plt.legend(['level rise if the rate of rise continues as it has since the year 1880', 
+        'level rise if the rate of rise continues as it has since the year 2000'])
     plt.title('Rise in Sea Level')
     
     # Save plot and return data for testing (DO NOT MODIFY)
