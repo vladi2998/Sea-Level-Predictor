@@ -32,7 +32,7 @@ def draw_plot():
     # Add labels and title
     plt.xlabel('Year')
     plt.ylabel('Sea Level (inches)')
-    plt.legend(['level rise if the rate of rise continues as it has since the year 1880', 
+    plt.legend(['Level rise if the rate of rise continues as it has since the year 1880', 
         'level rise if the rate of rise continues as it has since the year 2000'])
     plt.title('Rise in Sea Level')
     
